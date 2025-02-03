@@ -1,0 +1,33 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic}
+    Make sure you find any interesting and relevant information 
+# the current year is {current_year}.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {topic}
+  agent: researcher
+
+reporting_task:
+  description: >
+    Review the context you got, Write a well-researched, engaging, and informative blog post
+    Guidelines:
+    Introduction: Start with a compelling hook that introduces the topic and highlights its importance.
+    Main Content:
+    Provide clear and concise explanations with relevant examples.
+    Include statistics, case studies, or expert opinions if applicable.
+    Structure the content with subheadings, bullet points, and short paragraphs for readability.
+    Tone & Style:
+    Maintain a conversational yet professional tone.
+    Use storytelling techniques to engage the reader.
+    Ensure clarity and avoid jargon unless necessary.
+    Conclusion: Summarize key takeaways and provide actionable insights or thought-provoking questions for the reader.
+    SEO Optimization:
+    Use relevant keywords naturally throughout the content.
+    Add engaging headings and subheadings.
+    Include a meta description summarizing the article in one or two sentences.
+    Ensure the blog is plagiarism-free, well-structured, and formatted professionally. Keep the word count between 800-1200 words, depending on the depth of the topic.
+  
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: reporting_analyst
