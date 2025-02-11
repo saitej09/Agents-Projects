@@ -42,7 +42,7 @@ class BlogCrew:
 
         try:
             blog = (
-                BlogGenerator(temperature=self.temperature, model=model)
+                BlogGenerator(temperature=self.temperature, model=self.model)
                 .crew()
                 .kickoff(inputs=inputs)
             )
@@ -50,7 +50,7 @@ class BlogCrew:
         except Exception as e:
             raise Exception(f"An error occurred while running the crew: {e}")
 
-        return blog
+        return self.output
 
 
 if __name__ == "__main__":
